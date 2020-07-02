@@ -1,4 +1,4 @@
-package arraysLists;
+package strings;
 
 /**
  * Created by gadzik on 01.07.20.
