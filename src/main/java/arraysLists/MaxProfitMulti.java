@@ -4,7 +4,7 @@ package arraysLists;
  * Created by gadzik on 07.07.20.
  */
 public class MaxProfitMulti {
-
+// https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
     public static int maxProfit(int[] prices) {
         int i = 0;
         int valley = prices[0];

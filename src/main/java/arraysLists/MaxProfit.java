@@ -4,6 +4,7 @@ package arraysLists;
  * Created by gadzik on 07.07.20.
  */
 public class MaxProfit {
+    // https://algorithms.tutorialhorizon.com/stock-single-sell-problem-on-solution/
     public static int maxProfit(int prices[]) {
         int minprice = Integer.MAX_VALUE;
         int maxprofit = 0;

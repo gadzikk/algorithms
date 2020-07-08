@@ -4,6 +4,7 @@ package arraysLists;
  * Created by gadzik on 07.07.20.
  */
 public class LeadersInArr {
+    // https://www.geeksforgeeks.org/leaders-in-an-array/
     void printLeaders(int arr[], int size) {
         int max_from_right =  arr[size-1];
         System.out.print(max_from_right + " ");

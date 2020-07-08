@@ -4,6 +4,7 @@ package arraysLists;
  * Created by gadzik on 29.06.20.
  */
 public class CountSubarraysStartEndTheSame {
+    // https://www.geeksforgeeks.org/count-of-subarrays-which-start-and-end-with-the-same-element/
     public static void cntArray(int A[], int N)
     {
         // initialize result with 0

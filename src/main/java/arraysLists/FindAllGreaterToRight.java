@@ -4,7 +4,7 @@ package arraysLists;
  * Created by gadzik on 07.07.20.
  */
 public class FindAllGreaterToRight {
-
+// https://www.techiedelight.com/find-elements-array-greater-than-elements-right/
     public static void find(int[] arr) {
         int max_so_far = Integer.MIN_VALUE;
 

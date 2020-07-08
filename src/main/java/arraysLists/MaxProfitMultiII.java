@@ -4,7 +4,7 @@ package arraysLists;
  * Created by gadzik on 07.07.20.
  */
 public class MaxProfitMultiII {
- //
+ // https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
     public static int maxProfit(int[] prices) {
         int maxprofit = 0;
         for (int i = 1; i < prices.length; i++) {

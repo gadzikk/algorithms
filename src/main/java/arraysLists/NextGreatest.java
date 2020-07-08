@@ -4,6 +4,7 @@ package arraysLists;
  * Created by gadzik on 30.06.20.
  */
 public class NextGreatest {
+    // https://www.geeksforgeeks.org/replace-every-element-with-the-greatest-on-right-side/
     static void nextGreatest(int arr[])
     {
         int size = arr.length;

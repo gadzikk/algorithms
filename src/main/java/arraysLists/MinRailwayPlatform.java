@@ -6,6 +6,7 @@ import java.util.Arrays;
  * Created by gadzik on 07.07.20.
  */
 public class MinRailwayPlatform {
+    // https://www.geeksforgeeks.org/minimum-number-platforms-required-railwaybus-station/
     static int findPlatform(int arr[], int dep[], int n) {
         // Sort arrival and departure arrays
         Arrays.sort(arr);
