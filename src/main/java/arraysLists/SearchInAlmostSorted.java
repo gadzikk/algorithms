@@ -23,7 +23,7 @@ public class SearchInAlmostSorted {
                 return binarySearch(arr, l, mid - 2, x);
             }
 
-            // Else the element can only be present in right subarray
+            // Else the element can only be present in getRightChildIndex subarray
             return binarySearch(arr, mid + 2, r, x);
         }
 

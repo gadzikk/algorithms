@@ -1,5 +1,7 @@
 package treesGraphs;
 
+import zobjects.NodeT;
+
 /**
  * Created by gadzik on 17.06.20.
  */

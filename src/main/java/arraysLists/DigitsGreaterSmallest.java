@@ -16,7 +16,7 @@ public class DigitsGreaterSmallest {
     static void findNext(char ar[], int n) {
         int i;
 
-        // I) Start from the right most digit and find the first digit that is smaller than the digit next to it.
+        // I) Start from the getRightChildIndex most digit and find the first digit that is smaller than the digit next to it.
         for (i = n - 1; i > 0; i--) {
             if (ar[i - 1] < ar[i]) {
                 break;
@@ -30,7 +30,7 @@ public class DigitsGreaterSmallest {
         } else {
             int beforeMinIndValue = ar[i - 1], minIndex = i;
 
-            // II) Find the smallest digit on right side of (i-1)'th digit that is greater than number[i-1]
+            // II) Find the smallest digit on getRightChildIndex side of (i-1)'th digit that is greater than number[i-1]
             for (int j = i + 1; j < n; j++) {
                 if (beforeMinIndValue < ar[j] && ar[j] < ar[minIndex]) {
                     minIndex = j;

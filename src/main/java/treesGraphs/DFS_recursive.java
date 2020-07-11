@@ -1,5 +1,8 @@
 package treesGraphs;
 
+import zobjects.Edge;
+import zobjects.Graph;
+
 import java.util.Arrays;
 import java.util.List;
 

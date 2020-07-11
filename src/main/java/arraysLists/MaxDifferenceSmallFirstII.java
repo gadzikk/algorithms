@@ -9,7 +9,7 @@ public class MaxDifferenceSmallFirstII {
     {
         int maxDiff = -1;
 
-        // Initialize max element from right side
+        // Initialize max element from getRightChildIndex side
         int maxRight = arr[n-1];
 
         for (int i = n-2; i >= 0; i--) {

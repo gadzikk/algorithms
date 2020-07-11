@@ -1,13 +1,13 @@
-package treesGraphs;
+package zobjects;
 
 /**
  * Created by gadzik on 17.06.20.
  */
 public class NodeT {
-    int key, height;
-    NodeT left, right;
+    public int key, height;
+    public NodeT left, right;
 
-    NodeT(int d)
+    public NodeT(int d)
     {
         key = d;
         height = 1;

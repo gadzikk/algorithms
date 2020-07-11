@@ -1,12 +1,12 @@
-package treesGraphs;
+package zobjects;
 
 /**
  * Created by gadzik on 17.06.20.
  */
 public class Node {
-    int data;
-    Node left;
-    Node right;
+    public int data;
+    public Node left;
+    public Node right;
 
     public Node(int data) {
         this.data = data;

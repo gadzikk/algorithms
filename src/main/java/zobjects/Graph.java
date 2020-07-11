@@ -1,4 +1,4 @@
-package treesGraphs;
+package zobjects;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,10 +7,10 @@ import java.util.List;
  * Created by gadzik on 17.06.20.
  */
 public class Graph {
-    List<List<Integer>> adjList = null;
+    public List<List<Integer>> adjList = null;
 
     // Constructor
-    Graph(List<Edge> edges, int N) {
+    public Graph(List<Edge> edges, int N) {
         adjList = new ArrayList<>();
 
         for (int i = 0; i < N; i++) {
