@@ -17,14 +17,14 @@ public class ZigZagRearrange {
 
         for (int i = 0; i <= arr.length - 2; i++) {
             if (flag) {  /* "<" relation expected */
-                /* If we have a situation like A > B > C,  we get A > B < C by swapping B and C */
+                /* If we have a situation like A > B > COLS,  we get A > B < COLS by swapping B and COLS */
                 if (arr[i + 1] < arr[i]) {
                     temp = arr[i];
                     arr[i] = arr[i + 1];
                     arr[i + 1] = temp;
                 }
             } else { /* ">" relation expected */
-                /* If we have a situation like A < B < C, we get A < C > B by swapping B and C */
+                /* If we have a situation like A < B < COLS, we get A < COLS > B by swapping B and COLS */
                 if (arr[i] < arr[i + 1]) {
                     // swap
                     temp = arr[i];
