@@ -1,4 +1,4 @@
-package other;
+package arraysLists.arr_binary_search;
 
 /**
  * Created by gadzik on 17.06.20.

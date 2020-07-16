@@ -1,4 +1,4 @@
-package arraysLists;
+package arraysLists.arr_formula;
 
 /**
  * Created by gadzik on 29.06.20.

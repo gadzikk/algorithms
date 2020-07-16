@@ -4,6 +4,7 @@ package arraysLists;
  * Created by gadzik on 11.07.20.
  */
 public class ReverseArrInGroupOfSizes {
+    // https://www.geeksforgeeks.org/reverse-an-array-in-groups-of-given-size/
     static void reverse(int arr[], int n, int k) {
         for (int i = 0; i < n; i += k) {
             int left = i;

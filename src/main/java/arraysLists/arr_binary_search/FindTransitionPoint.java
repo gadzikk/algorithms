@@ -1,9 +1,9 @@
-package arraysLists;
+package arraysLists.arr_binary_search;
 
 /**
  * Created by gadzik on 08.07.20.
  */
-public class FindTransitionPointBS {
+public class FindTransitionPoint {
     // https://www.geeksforgeeks.org/find-transition-point-binary-array/
     public static int indexOfFirstOne(int arr[], int low,
                                       int high) {
