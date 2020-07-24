@@ -22,7 +22,7 @@ public class TwoStacksUsingArr {
             top1++;
             arr[top1] = x;
         } else {
-            System.out.println("Stack Overflow");
+            System.out.println("StackUsingLL Overflow");
             System.exit(1);
         }
     }
@@ -33,7 +33,7 @@ public class TwoStacksUsingArr {
             top2--;
             arr[top2] = x;
         } else {
-            System.out.println("Stack Overflow");
+            System.out.println("StackUsingLL Overflow");
             System.exit(1);
         }
     }
@@ -44,7 +44,7 @@ public class TwoStacksUsingArr {
             top1--;
             return x;
         } else {
-            System.out.println("Stack Underflow");
+            System.out.println("StackUsingLL Underflow");
             System.exit(1);
         }
         return 0;
@@ -57,7 +57,7 @@ public class TwoStacksUsingArr {
             top2++;
             return x;
         } else {
-            System.out.println("Stack Underflow");
+            System.out.println("StackUsingLL Underflow");
             System.exit(1);
         }
         return 0;

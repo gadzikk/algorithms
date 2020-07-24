@@ -5,7 +5,7 @@ import static java.lang.System.exit;
 /**
  * Created by gadzik on 22.07.20.
  */
-public class Stack {
+public class StackUsingLL {
     private class Node {
         int data;
         Node link;
@@ -13,7 +13,7 @@ public class Stack {
 
     Node top;
 
-    Stack() {
+    StackUsingLL() {
         this.top = null;
     }
 
@@ -64,7 +64,7 @@ public class Stack {
     }
 
     public static void main(String[] args) {
-        Stack obj = new Stack();
+        StackUsingLL obj = new StackUsingLL();
         obj.push(11);
         obj.push(22);
         obj.push(33);

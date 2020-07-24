@@ -44,7 +44,7 @@ public class KStacksUsingArr {
         void push(int item, int sn) {
             // Overflow check
             if (isFull()) {
-                System.out.println("Stack Overflow");
+                System.out.println("StackUsingLL Overflow");
                 return;
             }
 
@@ -65,7 +65,7 @@ public class KStacksUsingArr {
         int pop(int sn) {
             // Underflow check
             if (isEmpty(sn)) {
-                System.out.println("Stack Underflow");
+                System.out.println("StackUsingLL Underflow");
                 return Integer.MAX_VALUE;
             }
             // Find index of top item in stack number 'sn'
