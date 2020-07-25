@@ -15,6 +15,11 @@ public class NodeL {
         next = null;
     }
 
+    public NodeL(int data, NodeL next) {
+        this.data = data;
+        this.next = next;
+    }
+
     public int getData() {
         return data;
     }
