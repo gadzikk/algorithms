@@ -8,6 +8,9 @@ public class Node {
     public Node left;
     public Node right;
 
+    public Node() {
+    }
+
     public Node(int data) {
         this.data = data;
         left = null;
