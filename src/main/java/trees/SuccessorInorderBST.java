@@ -3,7 +3,7 @@ package trees;
 /**
  * Created by gadzik on 04.08.20.
  */
-public class SuccessorInorder {
+public class SuccessorInorderBST {
     // https://www.geeksforgeeks.org/inorder-successor-in-binary-search-tree/
     static Node head;
 
@@ -63,7 +63,7 @@ public class SuccessorInorder {
     }
 
     public static void main(String[] args) {
-        SuccessorInorder tree = new SuccessorInorder();
+        SuccessorInorderBST tree = new SuccessorInorderBST();
         Node root = null, temp = null, suc = null, min = null;
         root = tree.insert(root, 20);
         root = tree.insert(root, 8);

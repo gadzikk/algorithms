@@ -3,54 +3,55 @@ package trees;
 import zobjects.Node;
 
 /**
- * Created by gadzik on 01.08.20.
+ * Created by gadzik on 09.08.20.
  */
 public class LowestCommonAncestor {
-    // https://www.geeksforgeeks.org/lowest-common-ancestor-in-a-binary-search-tree/
+    // https://www.geeksforgeeks.org/lowest-common-ancestor-binary-tree-set-1/
     Node root;
 
-    Node lca(Node node, int n1, int n2)
+    Node findLCA(int n1, int n2)
+    {
+        return findLCA(root, n1, n2);
+    }
+
+    Node findLCA(Node node, int n1, int n2)
     {
         if (node == null) {
             return null;
         }
 
-        if (node.data > n1 && node.data > n2) {
-            return lca(node.left, n1, n2);
+        if (node.data == n1 || node.data == n2) {
+            return node;
         }
 
-        if (node.data < n1 && node.data < n2) {
-            return lca(node.right, n1, n2);
+        Node leftLca = findLCA(node.left, n1, n2);
+        Node rightLca = findLCA(node.right, n1, n2);
+
+        if (leftLca!=null && rightLca!=null) {
+            return node;
         }
 
-        return node;
+        return (leftLca != null) ? leftLca : rightLca;
     }
 
-    /* Driver program to test lca() */
+    /* Driver program to test above functions */
     public static void main(String args[])
     {
         LowestCommonAncestor tree = new LowestCommonAncestor();
-        tree.root = new Node(20);
-        tree.root.left = new Node(8);
-        tree.root.right = new Node(22);
+        tree.root = new Node(1);
+        tree.root.left = new Node(2);
+        tree.root.right = new Node(3);
         tree.root.left.left = new Node(4);
-        tree.root.left.right = new Node(12);
-        tree.root.left.right.left = new Node(10);
-        tree.root.left.right.right = new Node(14);
-
-        int n1 = 10, n2 = 14;
-        Node t = tree.lca(tree.root, n1, n2);
-        System.out.println("LCA of " + n1 + " and " + n2 + " is " + t.data);
-
-        n1 = 14;
-        n2 = 8;
-        t = tree.lca(tree.root, n1, n2);
-        System.out.println("LCA of " + n1 + " and " + n2 + " is " + t.data);
-
-        n1 = 10;
-        n2 = 22;
-        t = tree.lca(tree.root, n1, n2);
-        System.out.println("LCA of " + n1 + " and " + n2 + " is " + t.data);
-
+        tree.root.left.right = new Node(5);
+        tree.root.right.left = new Node(6);
+        tree.root.right.right = new Node(7);
+        System.out.println("LCA(4, 5) = " +
+                tree.findLCA(4, 5).data);
+        System.out.println("LCA(4, 6) = " +
+                tree.findLCA(4, 6).data);
+        System.out.println("LCA(3, 4) = " +
+                tree.findLCA(3, 4).data);
+        System.out.println("LCA(2, 4) = " +
+                tree.findLCA(2, 4).data);
     }
 }

@@ -5,7 +5,7 @@ import zobjects.Node;
 /**
  * Created by gadzik on 02.08.20.
  */
-public class ClosestElement {
+public class ClosestElementBST {
     // https://www.geeksforgeeks.org/find-closest-element-binary-search-tree/
 
     static int min_diff, min_diff_key;
