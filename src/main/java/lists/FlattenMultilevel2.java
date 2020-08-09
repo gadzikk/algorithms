@@ -4,7 +4,7 @@ package lists;
  * Created by gadzik on 01.08.20.
  */
 public class FlattenMultilevel2 {
-    // https://www.geeksforgeeks.org/flatten-a-multi-level-linked-list-set-2-depth-wise/?ref=rp
+    // https://www.geeksforgeeks.org/flatten-a-multi-level-linked-list-set-2-depth-wise/
     static Node last;
 
     static class Node {

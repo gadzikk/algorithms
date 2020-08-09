@@ -8,7 +8,7 @@ import java.util.Stack;
  * Created by gadzik on 02.08.20.
  */
 public class CheckMirrorOfTwo2 {
-    // https://www.geeksforgeeks.org/iterative-method-check-two-trees-mirror/?ref=rp
+    // https://www.geeksforgeeks.org/iterative-method-check-two-trees-mirror
 
 
     static String areMirrors(Node root1, Node root2) {

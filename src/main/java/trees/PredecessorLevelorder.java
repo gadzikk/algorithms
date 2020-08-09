@@ -7,7 +7,7 @@ import java.util.Queue;
  * Created by gadzik on 04.08.20.
  */
 public class PredecessorLevelorder {
-    // https://www.geeksforgeeks.org/level-order-predecessor-of-a-node-in-binary-tree/?ref=rp
+    // https://www.geeksforgeeks.org/level-order-predecessor-of-a-node-in-binary-tree
     static class Node {
         Node left, right;
         int value;

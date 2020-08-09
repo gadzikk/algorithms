@@ -4,7 +4,7 @@ package arrays.arr_binary_search;
  * Created by gadzik on 29.06.20.
  */
 public class CheckArrSortedRotated {
-// https://www.geeksforgeeks.org/check-if-an-array-is-sorted-and-rotated-using-binary-search/?ref=leftbar-rightbar
+// https://www.geeksforgeeks.org/check-if-an-array-is-sorted-and-rotated-using-binary-search
 
     static int findPivot(int arr[], int low, int high) {
         // base cases

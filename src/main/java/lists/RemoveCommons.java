@@ -6,7 +6,7 @@ import zobjects.NodeL;
  * Created by gadzik on 25.07.20.
  */
 public class RemoveCommons {
-    // https://www.geeksforgeeks.org/remove-the-common-nodes-in-two-singly-linked-lists/?ref=leftbar-rightbar
+    // https://www.geeksforgeeks.org/remove-the-common-nodes-in-two-singly-linked-lists
     static void printList(NodeL p) {
         if (p == null) {
             System.out.print("[]");

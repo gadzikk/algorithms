@@ -6,7 +6,7 @@ import zobjects.Node;
  * Created by gadzik on 02.08.20.
  */
 public class PrintOddNodesBST {
-    // https://www.geeksforgeeks.org/print-all-odd-nodes-of-binary-search-tree/?ref=rp
+    // https://www.geeksforgeeks.org/print-all-odd-nodes-of-binary-search-tree
 
     static void oddNode(Node root) {
         if (root == null) {

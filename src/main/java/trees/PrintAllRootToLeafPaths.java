@@ -6,7 +6,7 @@ import zobjects.Node;
  * Created by gadzik on 02.08.20.
  */
 public class PrintAllRootToLeafPaths {
-    // https://www.geeksforgeeks.org/given-a-binary-tree-print-all-root-to-leaf-paths/?ref=rp
+    // https://www.geeksforgeeks.org/given-a-binary-tree-print-all-root-to-leaf-paths
     Node root;
 
     void printPaths(Node node) {

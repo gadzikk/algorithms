@@ -6,7 +6,7 @@ import zobjects.Node;
  * Created by gadzik on 04.08.20.
  */
 public class FindDistanceTwoNodes2 {
-    // https://www.geeksforgeeks.org/find-distance-between-two-nodes-of-a-binary-tree/?ref=rp
+    // https://www.geeksforgeeks.org/find-distance-between-two-nodes-of-a-binary-tree
     public static Node LCA(Node root, int n1, int n2) {
 
         if (root == null) {

@@ -9,7 +9,7 @@ import java.util.Queue;
  * Created by gadzik on 01.08.20.
  */
 public class FlattenLevelorder {
-    // https://www.geeksforgeeks.org/flatten-binary-tree-in-order-of-level-order-traversal/?ref=rp
+    // https://www.geeksforgeeks.org/flatten-binary-tree-in-order-of-level-order-traversal
     static void flatten(Node parent) {
         Queue<Node> q = new LinkedList<>();
         q.add(parent.left);

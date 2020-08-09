@@ -6,7 +6,7 @@ import zobjects.NodeL;
  * Created by gadzik on 25.07.20.
  */
 public class CompareNumbers {
-    // https://www.geeksforgeeks.org/compare-numbers-represented-by-linked-lists/?ref=rp
+    // https://www.geeksforgeeks.org/compare-numbers-represented-by-linked-lists
 
     static NodeL removeLeadingZeros(NodeL a) {
         if (a != null && a.data == 0)

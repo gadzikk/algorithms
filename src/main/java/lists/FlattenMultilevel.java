@@ -6,7 +6,7 @@ import zobjects.NodeL;
  * Created by gadzik on 01.08.20.
  */
 public class FlattenMultilevel {
-    // https://www.geeksforgeeks.org/flatten-a-linked-list-with-next-and-child-pointers/?ref=rp
+    // https://www.geeksforgeeks.org/flatten-a-linked-list-with-next-and-child-pointers
     class Node {
 
         int data;

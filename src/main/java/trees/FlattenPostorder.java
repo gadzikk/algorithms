@@ -6,7 +6,7 @@ import zobjects.Node;
  * Created by gadzik on 01.08.20.
  */
 public class FlattenPostorder {
-    // https://www.geeksforgeeks.org/flatten-binary-tree-in-order-of-post-order-traversal/?ref=rp
+    // https://www.geeksforgeeks.org/flatten-binary-tree-in-order-of-post-order-traversal
 
     static Node prev;
 

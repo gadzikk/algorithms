@@ -6,7 +6,7 @@ import zobjects.Node;
  * Created by gadzik on 04.08.20.
  */
 public class ExtremeNodesAlternateOrder {
-    // https://www.geeksforgeeks.org/recursive-program-to-print-extreme-nodes-of-each-level-of-binary-tree-in-alternate-order/?ref=rp
+    // https://www.geeksforgeeks.org/recursive-program-to-print-extreme-nodes-of-each-level-of-binary-tree-in-alternate-order
     static class INT {
         int count;
     }

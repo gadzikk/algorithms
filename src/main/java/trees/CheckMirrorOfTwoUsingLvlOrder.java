@@ -9,7 +9,7 @@ import java.util.Queue;
  * Created by gadzik on 02.08.20.
  */
 public class CheckMirrorOfTwoUsingLvlOrder {
-    // https://www.geeksforgeeks.org/check-if-two-trees-are-mirror-of-each-other-using-level-order-traversal/?ref=rp
+    // https://www.geeksforgeeks.org/check-if-two-trees-are-mirror-of-each-other-using-level-order-traversal
     static Node newNode(int data) {
         Node temp = new Node();
         temp.data = data;

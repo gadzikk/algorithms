@@ -6,7 +6,7 @@ import zobjects.Node;
  * Created by gadzik on 02.08.20.
  */
 public class LevelOrderTravesalSpiral {
-    // https://www.geeksforgeeks.org/level-order-traversal-in-spiral-form/?ref=rp
+    // https://www.geeksforgeeks.org/level-order-traversal-in-spiral-form
     Node root;
 
     void printSpiral(Node node) {

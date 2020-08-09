@@ -4,7 +4,7 @@ package arrays.arr_binary_search;
  * Created by gadzik on 17.06.20.
  */
 public class SearchInSortedRotatedArray {
-    // https://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/?ref=lbp
+    // https://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array
 
     static int pivotedBinarySearch(int arr[], int n, int key)
     {

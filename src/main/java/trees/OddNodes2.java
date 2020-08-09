@@ -1,0 +1,62 @@
+package trees;
+
+import zobjects.Node;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+/**
+ * Created by gadzik on 07.08.20.
+ */
+public class OddNodes2 {
+    // https://www.geeksforgeeks.org/print-nodes-odd-levels-tree/
+    static void printOddNodes(Node root) {
+        if (root == null) {
+            return;
+        }
+
+        Queue<Node> q = new LinkedList<>();
+        q.add(root);
+        boolean isOdd = true;
+        while (true) {
+            int nodeCount = q.size();
+            if (nodeCount == 0) {
+                break;
+            }
+
+            while (nodeCount > 0) {
+                Node node = q.peek();
+                if (isOdd == true) {
+                    System.out.print(node.data + " ");
+                }
+                q.remove();
+                if (node.left != null) {
+                    q.add(node.left);
+                }
+                if (node.right != null) {
+                    q.add(node.right);
+                }
+                nodeCount--;
+            }
+
+            isOdd = !isOdd;
+        }
+    }
+
+    static Node newNode(int data) {
+        Node node = new Node();
+        node.data = data;
+        node.left = null;
+        node.right = null;
+        return (node);
+    }
+
+    public static void main(String[] args) {
+        Node root = newNode(1);
+        root.left = newNode(2);
+        root.right = newNode(3);
+        root.left.left = newNode(4);
+        root.left.right = newNode(5);
+        printOddNodes(root);
+    }
+}

@@ -6,7 +6,7 @@ import zobjects.NodeL;
  * Created by gadzik on 25.07.20.
  */
 public class CreateWithMaxElOnSamePos {
-    // https://www.geeksforgeeks.org/create-a-linked-list-from-two-linked-lists-by-choosing-max-element-at-each-position/?ref=rp
+    // https://www.geeksforgeeks.org/create-a-linked-list-from-two-linked-lists-by-choosing-max-element-at-each-position
     static NodeL insert(NodeL root, int item) {
         NodeL ptr, temp;
         temp = new NodeL();

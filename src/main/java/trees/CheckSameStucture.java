@@ -6,7 +6,7 @@ import zobjects.Node;
  * Created by gadzik on 02.08.20.
  */
 public class CheckSameStucture {
-    // https://www.geeksforgeeks.org/check-if-two-trees-have-same-structure/?ref=rp
+    // https://www.geeksforgeeks.org/check-if-two-trees-have-same-structure
 
     static boolean isSameStructure(Node a, Node b) {
         if (a == null && b == null) {

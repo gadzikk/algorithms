@@ -4,7 +4,7 @@ package arrays.arr_binary_search;
  * Created by gadzik on 29.06.20.
  */
 public class CheckPerfectSquare {
-    // https://www.geeksforgeeks.org/check-if-a-given-number-is-a-perfect-square-using-binary-search/?ref=leftbar-rightbar
+    // https://www.geeksforgeeks.org/check-if-a-given-number-is-a-perfect-square-using-binary-search
     static int checkPerfectSquare(long N, long start, long last) {
         long mid = (start + last) / 2;
 

@@ -4,7 +4,7 @@ package lists;
  * Created by gadzik on 21.07.20.
  */
 public class DeleteNodesSmallerThanK {
-    // https://www.geeksforgeeks.org/delete-all-the-nodes-from-a-doubly-linked-list-that-are-smaller-than-a-given-value/?ref=rp
+    // https://www.geeksforgeeks.org/delete-all-the-nodes-from-a-doubly-linked-list-that-are-smaller-than-a-given-value
     static class Node {
         int data;
         Node prev, next;

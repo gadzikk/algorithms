@@ -32,8 +32,9 @@ public class LowestCommonAncestor3 {
         for (i = 0; i < path1.size() && i < path2.size(); i++) {
 
             // System.out.println(path1.get(i) + " " + path2.get(i));
-            if (!path1.get(i).equals(path2.get(i)))
+            if (!path1.get(i).equals(path2.get(i))) {
                 break;
+            }
         }
 
         return path1.get(i-1);
@@ -43,7 +44,6 @@ public class LowestCommonAncestor3 {
     // path in a vector path[], returns true if path exists otherwise false
     private boolean findPath(Node root, int n, List<Integer> path)
     {
-        // base case
         if (root == null) {
             return false;
         }
@@ -71,7 +71,6 @@ public class LowestCommonAncestor3 {
         return false;
     }
 
-    // Driver code
     public static void main(String[] args)
     {
         LowestCommonAncestor3 tree = new LowestCommonAncestor3();

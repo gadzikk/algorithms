@@ -9,7 +9,7 @@ import java.util.Map;
  * Created by gadzik on 23.07.20.
  */
 public class CloneWithNextAndRandom {
-    // https://www.geeksforgeeks.org/clone-linked-list-next-arbit-pointer-set-2/?ref=rp
+    // https://www.geeksforgeeks.org/clone-linked-list-next-arbit-pointer-set-2/
 
     NodeRn head;
 

@@ -6,7 +6,7 @@ import zobjects.NodeL;
  * Created by gadzik on 21.07.20.
  */
 public class AddTwoNumbers3 {
-    // https://www.geeksforgeeks.org/add-two-numbers-represented-by-linked-lists-set-3/?ref=rp
+    // https://www.geeksforgeeks.org/add-two-numbers-represented-by-linked-lists-set-3
     NodeL head;
 
     void traverse(NodeL head) {

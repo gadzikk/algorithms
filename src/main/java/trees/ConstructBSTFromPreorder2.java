@@ -8,7 +8,7 @@ import java.util.Stack;
  * Created by gadzik on 31.07.20.
  */
 public class ConstructBSTFromPreorder2 {
-    // https://www.geeksforgeeks.org/construct-bst-from-given-preorder-traversal-set-2/?ref=rp
+    // https://www.geeksforgeeks.org/construct-bst-from-given-preorder-traversal-set-2
     Node constructTree(int pre[], int size) {
 
         Node root = new Node(pre[0]);
