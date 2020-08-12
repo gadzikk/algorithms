@@ -16,7 +16,7 @@ public class DeepestLeftLeafNode {
         if (node == null)
             return;
 
-        if (isLeft != false && node.left == null && node.right == null && lvl > level.maxlevel) {
+        if (isLeft && node.left == null && node.right == null && lvl > level.maxlevel) {
             result = node;
             level.maxlevel = lvl;
         }

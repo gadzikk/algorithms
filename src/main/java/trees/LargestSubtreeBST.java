@@ -41,61 +41,40 @@ public class LargestSubtreeBST {
         }
 
         int min = Integer.MAX_VALUE;
-
-        /* A flag variable for left subtree property
-         i.e., max(root->left) < root->data */
         boolean left_flag = false;
-
-        /* A flag variable for right subtree property
-         i.e., min(root->right) > root->data */
         boolean right_flag = false;
+        int ls, rs;
 
-        int ls, rs; // To store sizes of left and right subtrees
-
-        /* Following tasks are done by recursive call for left subtree
-         a) Get the maximum value in left subtree (Stored in *max_ref)
-         b) Check whether Left Subtree is BST or not (Stored in *is_bst_ref)
-         c) Get the size of maximum size BST in left subtree (updates *max_size) */
         max_ref.max = Integer.MIN_VALUE;
         ls = largestBSTUtil(node.left, min_ref, max_ref, max_size_ref, is_bst_ref);
         if (is_bst_ref.is_bst == true && node.data > max_ref.max) {
             left_flag = true;
         }
 
-        /* Before updating *min_ref, store the min value in left subtree. So that we
-         have the correct minimum value for this subtree */
         min = min_ref.min;
 
-        /* The following recursive call does similar (similar to left subtree)
-         task for right subtree */
         min_ref.min = Integer.MAX_VALUE;
         rs = largestBSTUtil(node.right, min_ref, max_ref, max_size_ref, is_bst_ref);
         if (is_bst_ref.is_bst == true && node.data < min_ref.min) {
             right_flag = true;
         }
 
-        // Update min and max values for the parent recursive calls
         if (min < min_ref.min) {
             min_ref.min = min;
         }
-        if (node.data < min_ref.min) // For leaf nodes
-        {
+        if (node.data < min_ref.min) {
             min_ref.min = node.data;
         }
         if (node.data > max_ref.max) {
             max_ref.max = node.data;
         }
 
-        /* If both left and right subtrees are BST. And left and right
-         subtree properties hold for this node, then this tree is BST.
-         So return the size of this tree */
         if (left_flag && right_flag) {
             if (ls + rs + 1 > max_size_ref.max_size) {
                 max_size_ref.max_size = ls + rs + 1;
             }
             return ls + rs + 1;
         } else {
-            //Since this subtree is not BST, set is_bst flag for parent calls
             is_bst_ref.is_bst = false;
             return 0;
         }
