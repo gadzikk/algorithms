@@ -1,4 +1,4 @@
-package trees;
+package trees.trees_hard;
 
 import zobjects.Node;
 
